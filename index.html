@@ -1,36 +1,60 @@
+
 <!DOCTYPE html>
 <html lang="pt-br">
   <head>
     <meta charset="UTF-8">
-    <meta name="viewport" 
-    content="width=device-width, initial-scale=1.0">
-    <title>blog</title>
-     <style>
-      link rel=''stylesheet''href=''style.css
-     header{
-       background-color: #e8ebee;
-       color:#000000 ;
-       text-align:center;
-       max-width:800px;;
-     }
-     main{
-      background-color:#ffff ;
-     </style>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu Blog Tech & Imóveis</title>
+    <link rel="stylesheet" href="style.css">
   </head>
   <body>
-      <header>
-       <h1>meu  blog tech</h1>
-       <p>vou compartilhar conhecimento sobre vendas de imovel</p>
-      </header>
-      </main>
-       <h2>meu primeiro post</h2>
-       <p>por: robert willian souza</p>
-       <p> boas-vindas ao meu novo blog aqui vou compartilhar dicas de 
-        como vender mais rapido </p>
-        
-    </body>
- </html>
- 
 
- <header></header>
+    <header>
+      <h1>Meu Blog Tech</h1>
+      <p>Dicas e melhores ofertas sobre vendas de imóveis</p>
+    </header>
 
+    <main class="grid-imoveis">
+
+      <!-- Imóvel 1 -->
+      <article class="card-imovel">
+        <div class="card-imagem-container">
+          <img src="https://images.unsplash.com/photo-1568605117036-5fe5e7bab0b7?w=500" alt="Casa Moderna">
+          <span class="badge-status">Destaque</span>
+        </div>
+        <div class="card-corpo">
+          <h2 class="card-titulo">Casa Moderna no Centro</h2>
+          <p class="card-preco">R$ 450.000</p>
+          <div class="card-detalhes">
+            <span>3 Quertos</span> • <span>2 Banheiros</span> • <span>120m²</span>
+          </div>
+          <div class="card-acoes">
+            <button class="btn btn-detalhes">Detalhes</button>
+            <button class="btn btn-contato">Contato</button>
+          </div>
+        </div>
+      </article>
+
+      <!-- Imóvel 2 -->
+      <article class="card-imovel">
+        <div class="card-imagem-container">
+          <img src="https://images.unsplash.com/photo-1570129477492-45c003edd2be?w=500" alt="Apartamento">
+          <span class="badge-status">Venda</span>
+        </div>
+        <div class="card-corpo">
+          <h2 class="card-titulo">Apartamento Vista Mar</h2>
+          <p class="card-preco">R$ 680.000</p>
+          <div class="card-detalhes">
+            <span>2 Quartos</span> • <span>1 Banheiro</span> • <span>85m²</span>
+          </div>
+          <div class="card-acoes">
+            <button class="btn btn-detalhes">Detalhes</button>
+            <button class="btn btn-contato">Contato</button>
+          </div>
+        </div>
+      </article>
+
+    </main>
+
+  </body>
+</html>

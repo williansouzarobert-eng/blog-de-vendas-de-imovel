@@ -1,0 +1,289 @@
+/* style.css - Design do HomeFinder (Vitrine de Imóveis) */
+
+:root {
+  --primary-color: #10b981;
+  --primary-hover: #059669;
+  --bg-color: #f3f4f6;
+  --card-bg: #ffffff;
+  --text-main: #1f2937;
+  --text-muted: #6b7280;
+  --border-radius: 12px;
+  --shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+}
+
+body {
+  background-color: var(--bg-color);
+  color: var(--text-main);
+  padding: 2rem;
+}
+
+header {
+  max-width: 1200px;
+  margin: 0 auto 2rem auto;
+}
+
+header h1 {
+  font-size: 1.8rem;
+  color: var(--text-main);
+}
+
+/* Layout em Grid Responsivo */
+.grid-imoveis {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.5rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Cartão do Imóvel */
+.card-imovel {
+  background-color: var(--card-bg);
+  border-radius: var(--border-radius);
+  overflow: hidden;
+  box-shadow: var(--shadow);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  position: relative;
+}
+
+.card-imovel:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+}
+
+/* Imagem e Tag de Status */
+.card-imagem-container {
+  position: relative;
+  width: 100%;
+  height: 200px;
+}
+
+.card-imagem-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.badge-status {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  background-color: var(--primary-color);
+  color: #ffffff;
+  font-size: 0.75rem;
+  font-weight: 700;
+  padding: 4px 10px;
+  border-radius: 20px;
+  text-transform: uppercase;
+}
+
+/* Conteúdo */
+.card-corpo {
+  padding: 1.25rem;
+}
+
+.card-titulo {
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin-bottom: 0.25rem;
+}
+
+.card-preco {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: var(--primary-color);
+  margin-bottom: 0.5rem;
+}
+
+.card-detalhes {
+  font-size: 0.875rem;
+  color: var(--text-muted);
+  margin-bottom: 1rem;
+  display: flex;
+  gap: 1rem;
+}
+
+/* Botões de Ação */
+.card-acoes {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.btn {
+  flex: 1;
+  padding: 0.6rem;
+  border: none;
+  border-radius: 6px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.btn-detalhes {
+  background-color: #e5e7eb;
+  color: var(--text-main);
+}
+
+.btn-detalhes:hover {/* style.css - Design do HomeFinder (Vitrine de Imóveis) */
+
+:root {
+  --primary-color: #10b981;
+  --primary-hover: #059669;
+  --bg-color: #f3f4f6;
+  --card-bg: #ffffff;
+  --text-main: #1f2937;
+  --text-muted: #6b7280;
+  --border-radius: 12px;
+  --shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+}
+
+body {
+  background-color: var(--bg-color);
+  color: var(--text-main);
+  padding: 2rem;
+}
+
+header {
+  max-width: 1200px;
+  margin: 0 auto 2rem auto;
+}
+
+header h1 {
+  font-size: 1.8rem;
+  color: var(--text-main);
+}
+
+/* Layout em Grid Responsivo */
+.grid-imoveis {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.5rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Cartão do Imóvel */
+.card-imovel {
+  background-color: var(--card-bg);
+  border-radius: var(--border-radius);
+  overflow: hidden;
+  box-shadow: var(--shadow);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  position: relative;
+}
+
+.card-imovel:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+}
+
+/* Imagem e Tag de Status */
+.card-imagem-container {
+  position: relative;
+  width: 100%;
+  height: 200px;
+}
+
+.card-imagem-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.badge-status {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  background-color: var(--primary-color);
+  color: #ffffff;
+  font-size: 0.75rem;
+  font-weight: 700;
+  padding: 4px 10px;
+  border-radius: 20px;
+  text-transform: uppercase;
+}
+
+/* Conteúdo */
+.card-corpo {
+  padding: 1.25rem;
+}
+
+.card-titulo {
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin-bottom: 0.25rem;
+}
+
+.card-preco {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: var(--primary-color);
+  margin-bottom: 0.5rem;
+}
+
+.card-detalhes {
+  font-size: 0.875rem;
+  color: var(--text-muted);
+  margin-bottom: 1rem;
+  display: flex;
+  gap: 1rem;
+}
+
+/* Botões de Ação */
+.card-acoes {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.btn {
+  flex: 1;
+  padding: 0.6rem;
+  border: none;
+  border-radius: 6px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.btn-detalhes {
+  background-color: #e5e7eb;
+  color: var(--text-main);
+}
+
+.btn-detalhes:hover {
+  background-color: #d1d5db;
+}
+
+.btn-contato {
+  background-color: var(--primary-color);
+  color: #ffffff;
+}
+
+.btn-contato:hover {
+  background-color: var(--primary-hover);
+}
+  background-color: #d1d5db;
+}
+
+.btn-contato {
+  background-color: var(--primary-color);
+  color: #ffffff;
+}
+
+.btn-contato:hover {
+  background-color: var(--primary-hover);
+}
