@@ -96,4 +96,3 @@ class AppManager {
 document.addEventListener('DOMContentLoaded', () => {
   new AppManager();
 });
-
